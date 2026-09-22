@@ -1,0 +1,34 @@
+{
+  "name": "pi-deep-research",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive deep research for the pi coding agent: plan, approve, research, cite.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLoomLabs/pi-dr.git"
+  },
+  "homepage": "https://github.com/TheLoomLabs/pi-dr#readme",
+  "bugs": {
+    "url": "https://github.com/TheLoomLabs/pi-dr/issues"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "^0.85.1",
+    "@earendil-works/pi-coding-agent": "^0.85.1",
+    "@earendil-works/pi-tui": "^0.85.1",
+    "@types/node": "^26.6.2",
+    "typebox": "^1.3.34",
+    "typescript": "^7.0.2"
+  }
+}
