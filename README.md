@@ -24,8 +24,6 @@ The approved plan is **guidance, not a script**. The decision loop may reorder i
 follow-up, or stop early. The plan's second job is to be the fallback: when a decision is
 unparseable, duplicated, or refused, the next unused plan query runs instead of burning the turn.
 
-Design notes on where this came from: [`docs/unsloth-deep-research.md`](docs/unsloth-deep-research.md).
-
 ## Requirements
 
 A SearXNG instance with its JSON API enabled — and if you have not got one,
